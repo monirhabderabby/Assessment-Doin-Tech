@@ -87,7 +87,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         poppins.variable,
       )}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans [--navbar-height:6rem] lg:[--navbar-height:7.5rem]">
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}

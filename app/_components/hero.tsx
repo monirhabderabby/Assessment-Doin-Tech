@@ -4,7 +4,10 @@ import HeroVisual from "./hero-visuals/hero-visuals";
 
 export default function HeroSection() {
   return (
-    <section aria-labelledby="hero-heading" className="relative">
+    <section
+      aria-labelledby="hero-heading"
+      className="relative flex h-[calc(100dvh-var(--navbar-height))] flex-col overflow-x-hidden overflow-y-auto"
+    >
       <Image
         src="/shapes/3d ornament.png"
         alt=""
@@ -13,7 +16,7 @@ export default function HeroSection() {
         sizes="100vw"
         className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden h-auto w-full lg:block motion-safe:animate-ornament-drift"
       />
-      <section className="relative z-10 pt-10 text-center sm:pt-12 lg:pt-14">
+      <section className="relative z-10 shrink-0 pt-10 text-center sm:pt-12 lg:pt-14">
         <h1
           id="hero-heading"
           className="mx-auto max-w-245 text-[40px] leading-[1.13] font-semibold tracking-[-0.04em] sm:text-6xl lg:text-[72px]"

@@ -5,12 +5,12 @@ import HeroStudentsCard from "./hero-students-card";
 
 export default function HeroVisual() {
   return (
-    <div className="relative mx-auto max-w-360">
+    <div className="relative mx-auto w-full max-w-360 shrink-0 lg:min-h-64 lg:flex-1">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-[5%] top-12 bottom-0 rounded-t-[50%] bg-lime sm:inset-x-[11%]"
       />
-      <div className="relative mx-auto w-full max-w-180 sm:h-107.5 lg:h-127.5">
+      <div className="relative mx-auto w-full max-w-180 sm:h-107.5 lg:absolute lg:inset-0 lg:h-full">
         <Image
           src="/hero-person.png"
           alt="Smiling student wearing headphones and holding a laptop"

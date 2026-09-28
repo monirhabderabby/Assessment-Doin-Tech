@@ -42,7 +42,7 @@ export default function Header() {
         if (event.key === "Escape") setOpen(false);
       }}
     >
-      <div className="container flex h-24 items-center justify-between lg:h-30">
+      <div className="container flex h-(--navbar-height) items-center justify-between">
         <Logo light />
         <nav
           aria-label="Main navigation"
