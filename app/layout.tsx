@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/footer/footer";
 import Navbar from "@/components/shared/navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="main-content" className="flex-1">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
