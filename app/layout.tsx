@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/footer/footer";
 import Navbar from "@/components/shared/navbar";
+import SiteShell from "@/components/shared/site-shell";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -88,11 +89,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       )}
     >
       <body className="min-h-full flex flex-col font-sans [--navbar-height:6rem] lg:[--navbar-height:7.5rem]">
-        <Navbar />
-        <main id="main-content" className="flex-1">
+        <SiteShell navbar={<Navbar />} footer={<Footer />}>
           {children}
-        </main>
-        <Footer />
+        </SiteShell>
       </body>
     </html>
   );
