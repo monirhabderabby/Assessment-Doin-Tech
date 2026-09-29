@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function SignUpBrand() {
+export default function AuthBrand() {
   return (
     <Link href="/" aria-label="ByteSpace home" className="ml-0.5 flex h-[33px] w-8">
       <svg width="30" height="33" viewBox="0 0 30 33" fill="none" aria-hidden="true">

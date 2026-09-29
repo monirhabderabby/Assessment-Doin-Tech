@@ -9,13 +9,15 @@ export default function SiteShell({ children, navbar, footer }: {
   footer: ReactNode;
 }) {
   const pathname = usePathname();
-  const isSignUp = pathname === "/sign-up" || pathname.startsWith("/sign-up/");
+  const isAuthPage = ["/sign-up", "/login"].some(
+    (route) => pathname === route || pathname.startsWith(`${route}/`),
+  );
 
   return (
     <>
-      {!isSignUp && navbar}
+      {!isAuthPage && navbar}
       <main id="main-content" className="flex-1">{children}</main>
-      {!isSignUp && footer}
+      {!isAuthPage && footer}
     </>
   );
 }

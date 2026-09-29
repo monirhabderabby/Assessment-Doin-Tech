@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-export default function SignUpArtwork() {
+export default function AuthArtwork({ className }: { className?: string }) {
   return (
-    <div className="relative mt-14 hidden aspect-500/558 w-[500px] max-w-full md:block" aria-hidden="true">
+    <div className={cn("relative mt-14 hidden aspect-500/558 w-[500px] max-w-full md:block", className)} aria-hidden="true">
       <Image src="/images/sign-up/Course_Card_1.png" alt="" width={373} height={384} className="absolute top-[15.95%] left-0 h-auto w-[74.6%]" preload />
       <Image src="/images/sign-up/Course_Card_1-1.png" alt="" width={373} height={384} className="absolute top-0 left-[22.2%] h-auto w-[74.6%]" preload />
       <Image src="/images/sign-up/Cone.png" alt="" width={148} height={147} className="absolute top-[2.5%] left-[5.4%] h-auto w-[29.6%]" />

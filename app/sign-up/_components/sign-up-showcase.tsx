@@ -1,4 +1,4 @@
-import SignUpArtwork from "./sign-up-artwork";
+import AuthArtwork from "@/components/auth/auth-artwork";
 
 export default function SignUpShowcase() {
   return (
@@ -13,7 +13,7 @@ export default function SignUpShowcase() {
         The registration process is straightforward, uncomplicated, and
         efficient, allowing users to sign up quickly, easily, and at no cost
       </p>
-      <SignUpArtwork />
+      <AuthArtwork />
     </section>
   );
 }
