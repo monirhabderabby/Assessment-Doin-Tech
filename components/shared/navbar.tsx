@@ -61,9 +61,9 @@ export default function Header() {
         </nav>
         <div className="hidden items-center gap-6 text-sm text-white/75 md:flex">
           <Link href="/login">Sign In</Link>
-          <a href="#newsletter" className="hover:text-lime">
+          <Link href="/sign-up" className="hover:text-lime">
             Join Us
-          </a>
+          </Link>
           <Link
             href="/search"
             aria-label="Browse courses"
@@ -93,7 +93,7 @@ export default function Header() {
           aria-label="Mobile navigation"
           className="absolute inset-x-4 top-full mt-2 flex flex-col gap-1 rounded-2xl border border-white/20 bg-brand p-4 shadow-xl md:hidden"
         >
-          {[...links, { label: "Join Us", href: "#newsletter" }].map((link) => (
+          {[...links, { label: "Join Us", href: "/sign-up" }].map((link) => (
             <Link
               key={link.label}
               href={link.href}
