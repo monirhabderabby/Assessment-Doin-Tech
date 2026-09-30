@@ -1,5 +1,7 @@
 "use client";
 
+import Reveal from "@/components/motion/reveal";
+
 import { useState } from "react";
 import { AnimatePresence, LayoutGroup, MotionConfig, motion, useReducedMotion } from "framer-motion";
 import { courses, type Category } from "./course-data";
@@ -16,14 +18,14 @@ export default function CourseCatalog() {
   return (
     <MotionConfig reducedMotion="user">
       <section id="courses" aria-labelledby="catalog-heading" className="container py-16 sm:py-20 lg:py-24">
-        <header className="mx-auto mb-9 max-w-4xl text-center">
+        <Reveal as="header" className="mx-auto mb-9 max-w-4xl text-center">
           <h2 id="catalog-heading" className="text-3xl font-bold leading-tight tracking-tight text-[#101322] sm:text-4xl lg:text-5xl">
             Discover Your Passion,<br />Build Your Skills
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-muted-foreground sm:text-base">
             At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
           </p>
-        </header>
+        </Reveal>
         <LayoutGroup id="course-catalog">
           <CourseFilters selected={selected} onSelect={setSelected} />
           <p role="status" className="sr-only">{filteredCourses.length} courses available in {selected}.</p>
