@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/reveal";
 import { Check } from "lucide-react";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export default function GrowthSection() {
       className="overflow-hidden bg-[#f9f9f9] bg-[radial-gradient(ellipse_at_28%_4%,#eaff9a_0%,transparent_30%),radial-gradient(ellipse_at_0%_92%,#e6ff84_0%,transparent_24%),radial-gradient(ellipse_at_100%_100%,#cdd6f3_0%,transparent_38%),radial-gradient(ellipse_at_0%_50%,#dbe2f5_0%,transparent_35%)] py-14 sm:py-24"
     >
       <div className="container space-y-14 sm:space-y-16">
-        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
+        <Reveal className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
           <div className="max-w-135">
             <h2 className="text-3xl leading-[1.15] font-semibold tracking-[-0.035em] sm:text-[42px]">
               Your Path to Professional Growth Starts Here!
@@ -44,8 +45,8 @@ export default function GrowthSection() {
             sizes="(max-width: 767px) 90vw, 600px"
             className="mx-auto w-full max-w-150 mask-[linear-gradient(to_right,transparent,black_4%,black_96%,transparent)]"
           />
-        </div>
-        <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        </Reveal>
+        <Reveal className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <Image
             src="/images/creator-art.webp"
             alt="A course creator with her tablet, revenue dashboard, and happy student community"
@@ -81,7 +82,7 @@ export default function GrowthSection() {
               ))}
             </ul>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

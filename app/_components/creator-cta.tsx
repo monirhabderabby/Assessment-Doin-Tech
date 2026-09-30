@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/reveal";
 import Image from "next/image";
 
 export default function CreatorCta() {
@@ -38,7 +39,7 @@ export default function CreatorCta() {
         aria-hidden="true"
         className="absolute top-14 -right-16 -z-10 hidden h-64 w-40 -rotate-25 rounded-[50px] bg-white lg:block"
       />
-      <div className="container">
+      <Reveal className="container">
         <h2
           id="creator-heading"
           className="mx-auto max-w-162.5 text-3xl leading-[1.16] font-semibold tracking-tight sm:text-[44px]"
@@ -58,7 +59,7 @@ export default function CreatorCta() {
         >
           Join as Creator
         </a>
-      </div>
+      </Reveal>
     </section>
   );
 }

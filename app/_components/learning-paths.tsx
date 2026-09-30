@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/reveal";
 import {
   BriefcaseBusiness,
   Camera,
@@ -36,17 +37,18 @@ export default function LearningPaths() {
         curated categories.
       </p>
       <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:mt-16 lg:grid-cols-6 lg:gap-10">
-        {paths.map((path) => (
-          <Link
-            key={path.name}
-            href={`/search?category=${encodeURIComponent(path.name)}`}
-            className="flex min-h-40 flex-col items-center justify-center gap-4 rounded-[24px] border border-[#dedee3] px-3 py-7 text-center text-sm transition hover:-translate-y-1 hover:border-lime hover:bg-lime/10"
-          >
-            <span className="flex size-14 items-center justify-center rounded-full bg-lime">
-              <path.icon aria-hidden="true" className="size-7" />
-            </span>
-            {path.name}
-          </Link>
+        {paths.map((path, index) => (
+          <Reveal key={path.name} delay={index * 0.06}>
+            <Link
+              href={`/search?category=${encodeURIComponent(path.name)}`}
+              className="flex min-h-40 flex-col items-center justify-center gap-4 rounded-[24px] border border-[#dedee3] px-3 py-7 text-center text-sm transition hover:-translate-y-1 hover:border-lime hover:bg-lime/10"
+            >
+              <span className="flex size-14 items-center justify-center rounded-full bg-lime">
+                <path.icon aria-hidden="true" className="size-7" />
+              </span>
+              {path.name}
+            </Link>
+          </Reveal>
         ))}
       </div>
     </section>
