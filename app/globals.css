@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Keep content accessible without scripting or when motion is disabled. */
+@media (scripting: none), (prefers-reduced-motion: reduce) {
+  .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 @theme inline {
   --color-brand: #003be2;
   --color-lime: #d0ff00;
