@@ -1,5 +1,6 @@
 import HeroSection from "./_components/hero";
 import PartnerLogoSection from "./_components/partner-logo";
+import CourseCatalog from "./_components/courses/course-catalog";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <HeroSection />
       </div>
       <PartnerLogoSection />
+      <CourseCatalog />
     </div>
   );
 }
