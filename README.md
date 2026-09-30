@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSpace New - Frontend Assessment
 
-## Getting Started
+This project is built as part of the frontend assessment for **Doin Tech Limited**. The goal is to develop the "ByteSpace New" landing page and optional authentication pages strictly based on the provided Figma design.
 
-First, run the development server:
+## 👤 Candidate Information
+* **Candidate Name:** Monir Hossain Rabby
+* **Position:** Jr. Software Engineer (Frontend)
+* **Tracking ID:** `ba781ebd-ce55-493a-8e36-beb1af1236fa`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Live Demo & Links
+* **Live Deployment (Vercel):** [https://assessment-doin-tech.vercel.app]
+* **Figma Design:** [ByteSpace New Figma Design](https://www.figma.com/design/26TBgRjmpuxudcErJsHUfy/ByteSpace-New-Check-website?node-id=0-1&p=f&t=eQOrqJmq6rMG5b6L-0)
+
+---
+
+## 🛠️ Tech Stack
+* **Framework:** Next.js (App Router)
+* **Library:** React
+* **Styling:** Tailwind CSS
+* **Language:** JavaScript / TypeScript
+
+---
+
+## ✨ Features Implemented
+* **Pixel-Perfect Landing Page:** Fully responsive landing page matching the Figma design across mobile, tablet, and desktop viewports.
+* **Modular Components:** Built with clean, reusable, and pure functional React components (Header, Hero, Partner Logos, Growth & Learning Path, Testimonials, Footer, etc.).
+* **Bonus Pages:** Implemented responsive authentication pages (Login / Signup) as extra credit.
+* **Optimized Assets:** Structured with proper folder architecture and clean Git commit history.
+
+---
+
+## 📂 Project Structure
+```text
+├── app/                  # Next.js App Router pages
+├── components/           # Reusable UI components
+├── public/               # Static assets & images
+├── styles/               # Global styles & Tailwind configuration
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Getting Started Locally
+To run this project locally on your machine, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-url>
+   cd <repository-folder>
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+This project is developed for evaluation purposes for Doin Tech Limited.
