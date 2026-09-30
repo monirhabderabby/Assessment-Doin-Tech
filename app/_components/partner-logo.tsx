@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/reveal";
 import Image from "next/image";
 
 const partnerLogos = [
@@ -12,8 +13,8 @@ export default function PartnerLogoSection() {
   return (
     <section aria-label="Our partners" className="bg-[#f5f5f7] py-12 lg:py-20">
       <ul className="container flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:justify-between">
-        {partnerLogos.map((logo) => (
-          <li key={logo.src}>
+        {partnerLogos.map((logo, index) => (
+          <Reveal as="li" key={logo.src} delay={index * 0.06}>
             <Image
               src={logo.src}
               alt={logo.alt}
@@ -22,7 +23,7 @@ export default function PartnerLogoSection() {
               sizes="150px"
               className="h-auto w-37.5 object-contain"
             />
-          </li>
+          </Reveal>
         ))}
       </ul>
     </section>
